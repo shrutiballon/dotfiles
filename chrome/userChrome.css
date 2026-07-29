@@ -1,0 +1,39 @@
+
+#urlbar-input::placeholder,
+.searchbar-textbox::placeholder {
+  opacity: 0 !important;
+}
+
+:root {
+  --uc-sidebar-width: 240px;
+  --uc-nav-height: 0px;
+ }
+
+:root:not(:has(#TabsToolbar .tabbrowser-tab:not([hidden]))) {
+#sidebar-container {
+    background-color: var(--sidebar-background-color) !important;
+    position: absolute !important;
+    z-index: 99999 !important;
+    height: 100% !important;
+    width: 1px !important;
+    opacity: 0 !important;
+    transition: all 0.5s ease !important;
+}
+ 
+#sidebar-container:hover {
+    opacity: 1 !important;
+    min-width: 170px !important;
+}
+/**
+* Hide sidebar-panel-header (sidebar.revamp: true)
+*/
+#sidebar-panel-header {
+display: none;
+}
+
+
+* {
+  border-radius: 0px !important ;
+  font-size:small !important;
+  font-family: monospace;
+}
